@@ -1,37 +1,29 @@
-<?php require_once('../../private/initialize.php'); ?>
+<?php require_once('../../private/initialize.php'); 
 
-<?php
-  $salamanders = [
-    ['id' => '1',  'salamanderName' => 'Red-Legged Salamander'],
-    ['id' => '2',  'salamanderName' => 'Pigeon Mountain Salamander'],
-    ['id' => '3',  'salamanderName' => 'ZigZag Salamander'],
-    ['id' => '4',  'salamanderName' => 'Slimy Salamander'],
-  ];
-?>
-
-<?php 
+$salamanders = [
+  ['id' => '1',  'salamanderName' => 'Red-Legged Salamander'],
+  ['id' => '2',  'salamanderName' => 'Pigeon Mountain Salamander'],
+  ['id' => '3',  'salamanderName' => 'ZigZag Salamander'],
+  ['id' => '4',  'salamanderName' => 'Slimy Salamander'],
+];
 
 $page_title = 'Salamanders'; 
 include(SHARED_PATH . '/salamander-header.php'); 
 
 ?>
 
-<div id="content">
-  <div class="pages listing">
-    <h1>Salamanders</h1>
+<h1>Salamanders</h1>
 
-    <div class="actions">
-      <a class="action" href="">Create Salamander</a>
-    </div>
+  <a href="#">Create Salamander</a>
 
-  	<table class="list">
-  	  <tr>
-        <th>ID</th>
-  	    <th>Name</th>
-  	    <th>&nbsp;</th>
-  	    <th>&nbsp;</th>
-        <th>&nbsp;</th>
-  	  </tr>
+<table>
+  <tr>
+    <th>ID</th>
+    <th>Name</th>
+    <th>&nbsp;</th>
+    <th>&nbsp;</th>
+    <th>&nbsp;</th>
+  </tr>
 
       <?php foreach($salamanders as $salamander) { ?>
         <tr>

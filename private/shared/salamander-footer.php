@@ -1,5 +1,5 @@
 <footer>
-  &copy; <?php echo date('Y'); ?> Southern Appalachian Salamanders
+  <p>&copy; <?php echo date('Y'); ?> Southern Appalachian Salamanders</p>
 </footer>
 
 </body>

@@ -13,11 +13,11 @@
 
   <body>
     <header>
-      <h1>Southern Appalachian Salamanders</h1>
+      <h1><a href="<?= WWW_ROOT; ?>">Southern Appalachian Salamanders (SAS)</a></h1>
+      <navigation>
+        <ul>
+        <li><a href="<?= url_for('salamanders/'); ?>">Salamanders</a></li>
+        </ul>
+      </navigation>
     </header>
 
-    <navigation>
-      <ul>
-        <li><a href="<?php echo url_for('/index.php'); ?>">Menu</a></li>
-      </ul>
-    </navigation>

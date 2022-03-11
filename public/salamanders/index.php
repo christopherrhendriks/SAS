@@ -36,8 +36,4 @@ include(SHARED_PATH . '/salamander-header.php');
       <?php } ?>
   	</table>
 
-  </div>
-
-</div>
-
 <?php include(SHARED_PATH . '/salamander-footer.php'); ?>

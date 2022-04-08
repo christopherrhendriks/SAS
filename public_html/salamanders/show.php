@@ -1,4 +1,5 @@
 <?php require_once('../../private/initialize.php'); 
+$page_title = "Show Info";
 /* ------------------------------------------------------------------
 Your code here
 
@@ -10,7 +11,7 @@ THEN assign it the value 1
 
 Hint: The line starts with $id=
 ------------------------------------------------------------------ */
-
+$id = isset($_GET['id']) ? $_GET['id'] : '1';
 $page_title = 'Salamander Details';
 include(SHARED_PATH . '/salamander-header.php'); 
 
@@ -34,5 +35,6 @@ Create a link that does the following
 * Make the link text "Back to Salamander List"
 * Surround it with <p> tags to give it a little space
 ------------------------------------------------------------------>
-
+<?php echo('Page ID:' . h($id)); ?>
+<?php echo("<p><a href=" . url_for('salamanders/index.php') . ">&laquo; Back to Salamander List</a>"); ?>
 <?php include(SHARED_PATH . '/salamander-footer.php'); ?>

@@ -1,4 +1,6 @@
 <?php 
+include_once("../../private/initialize.php");
+include(SHARED_PATH . '/salamander-header.php');
   /* ------------------------------------------------------------------
     
   1.)
@@ -18,8 +20,7 @@
     id 4 Slimy Salamander
 
     ------------------------------------------------------------------ */
-require_once('/../../private/initialize.php');
-
+require_once('../../private/initialize.php');
 
 $salamanders = [
   ['id' => '1', 'salamanderName' => 'Red-Legged Salamander'], 

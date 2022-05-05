@@ -1,1 +1,1 @@
-<!-- <?php header('Location: SAS/public_html/index.php'); ?> -->
+<?php header('Location: https://web182/sas/public_html/index.php'); ?>

@@ -17,6 +17,7 @@
     </header>
     <navigation>
       <ul>
+      <li><?php echo(url_for('salamanders/index.php'));?></li>
       <li><a href="<?= url_for('salamanders/index.php'); ?>">Salamanders</a></li>
       </ul>
     </navigation>

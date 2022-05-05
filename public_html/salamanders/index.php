@@ -1,6 +1,7 @@
 <?php 
-include_once("../../private/initialize.php");
-include(SHARED_PATH . '/salamander-header.php');
+  require_once("../../private/initialize.php");
+
+  
   /* ------------------------------------------------------------------
     
   1.)
@@ -20,22 +21,18 @@ include(SHARED_PATH . '/salamander-header.php');
     id 4 Slimy Salamander
 
     ------------------------------------------------------------------ */
-require_once('../../private/initialize.php');
 
-$salamanders = [
-  ['id' => '1', 'salamanderName' => 'Red-Legged Salamander'], 
-  ['id' => '2', 'salamanderName' => 'Pigeon Mountain Salamander'],
-  ['id' => '3', 'salamanderName' => 'ZigZag Salamander'],
-  ['id' => '4', 'salamanderName' => 'Slimy Salamander']
-];
+
+$salamanders = array(['id'=>'1', 'salamanderName'=>'Red-Legged Salamander'], ['id'=>'2', 'salamanderName'=>'Pigeon Mountain Salamander'], ['id'=>'3','salamanderName'=>'ZigZag Salamander'], ['id'=>'4', 'salamanderName'=>'Slimy Salamander']);
 
 $page_title = 'Salamanders';
+require_once(SHARED_PATH . '/salamander-header.php');
 
 /* ------------------------------------------------------------------
 Use require_once with the SHARED_PATH constant to reference 
 the salamander-header.php file
 ------------------------------------------------------------------ */
-require_once(SHARED_PATH . '/salamander-header.php');
+
 ?>
 
 <h1>Salamanders</h1>
@@ -54,8 +51,6 @@ require_once(SHARED_PATH . '/salamander-header.php');
       <?php foreach($salamanders as $salamander) { ?>
         <tr>
           <!------------------------------------------------------------------
-        Your code here
-        Delete this line.
 
         Add the table data for the
         row 1: salamander id
@@ -64,8 +59,8 @@ require_once(SHARED_PATH . '/salamander-header.php');
         
         You will need to reference the salamander id and name from the salamanders array
       ------------------------------------------------------------------>
-          <td><?php echo(h(u($salamander['id']))); ?></td>
-    	    <td><?php echo(h(u($salamander['salamanderName']))); ?></td>
+          <td><?php echo($salamander['id']); ?></td>
+    	    <td><?php echo($salamander['salamanderName']); ?></td>
           <td><a class="action" href="<?= url_for('salamanders/show.php?id=' . h(u($salamander['id']))); ?>">View</a></td>
           <td><a class="action" href="">Edit</a></td>
           <td><a class="action" href="">Delete</a></td>

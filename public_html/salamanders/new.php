@@ -10,9 +10,16 @@ elseif($test == '500') {
   error_500();
 }
 elseif($test == 'redirect') {
-  redirect_to(url_for('salamanders/index.php'));
+  header("Location: " . url_for('salamanders/index.php'));
 }
-else {
-  echo('No error');
-}
+
+$page_title = 'Salamanders';
+require_once(SHARED_PATH . '/salamander-header.php');
 ?>
+
+<h1>Create salamander</h1>
+<form action=<?php url_for("create.php") ?> method="POST">
+  <label for="sName">Salamander Name: </label>
+  <input name="sName" id="sName" type="text"><br>
+  <input type="submit" value="Submit Salamander">
+</form>

@@ -1,37 +1,10 @@
 <?php 
   require_once("../../private/initialize.php");
 
-  
-  /* ------------------------------------------------------------------
-    
-  1.)
-  * Use require_once to reference the initialize.php file
-  * Use a relative file path
-
-  2.)
-
-    Enter your code in the salamander array below
-
-    Use this array element to start your array.
-    ['id' => '1', 'salamanderName' => 'Red-Legged Salamander'],
-    
-    Add these salamanders to your array
-    id 2 Pigeon Mountain Salamander
-    id 3 ZigZag Salamander'
-    id 4 Slimy Salamander
-
-    ------------------------------------------------------------------ */
-
-
 $salamanders = array(['id'=>'1', 'salamanderName'=>'Red-Legged Salamander'], ['id'=>'2', 'salamanderName'=>'Pigeon Mountain Salamander'], ['id'=>'3','salamanderName'=>'ZigZag Salamander'], ['id'=>'4', 'salamanderName'=>'Slimy Salamander']);
 
 $page_title = 'Salamanders';
 require_once(SHARED_PATH . '/salamander-header.php');
-
-/* ------------------------------------------------------------------
-Use require_once with the SHARED_PATH constant to reference 
-the salamander-header.php file
------------------------------------------------------------------- */
 
 ?>
 

@@ -3,7 +3,7 @@
 function url_for($script_path) {
   // add the leading '/' if not present
   if($script_path[0] != '/') {
-    $script_path = "/" . $script_path;
+    $script_path = WWW_ROOT . "/" . $script_path;
   }
   return $script_path;
 }
@@ -36,11 +36,11 @@ function redirect_to($location) {
 }
 
 function is_post_request() {
-  return $_SERVER["REQUEST_METHOD"]=='POST';
+  return $_SERVER["REQUEST_METHOD"]=="POST";
 }
 
 function is_get_request() {
-  return $_SERVER["REQUEST_METHOD"]=='GET';
+  return $_SERVER["REQUEST_METHOD"]=="GET";
 }
 
 ?>

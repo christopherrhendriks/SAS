@@ -35,6 +35,5 @@ Create a link that does the following
 * Surround it with <p> tags to give it a little space
 ------------------------------------------------------------------>
 <p>Page ID: <?php echo($id) ?></p>
-<?php print(url_for('salamanders/index.php'));?>
 <p><a href="<?= url_for('salamanders/index.php'); ?>">&laquo; Back to Salamander List</a></p>
 <?php include(SHARED_PATH . '/salamander-footer.php'); ?>
